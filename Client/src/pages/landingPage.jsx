@@ -148,25 +148,8 @@ function Hero({ t }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent"></div>
             </div>
+        
             
-            {/* "Before/After" snippet */}
-            <motion.div 
-              className="absolute -bottom-8 -left-8 md:-left-12 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-2xl flex gap-4 items-center w-72 md:w-80 border border-emerald-100"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
-            >
-              <div className="flex-1">
-                <p className="text-xs font-semibold text-red-600 uppercase tracking-wide">{t.hero.cropLoss}</p>
-                <p className="text-xl font-bold text-red-600 line-through mt-1">₹50,000</p>
-              </div>
-              <div className="text-3xl text-emerald-600 animate-pulse">→</div>
-              <div className="flex-1">
-                <p className="text-xs font-semibold text-green-600 uppercase tracking-wide">{t.hero.savedIncome}</p>
-                <p className="text-xl font-bold text-green-600 mt-1">₹35,000+</p>
-              </div>
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>
