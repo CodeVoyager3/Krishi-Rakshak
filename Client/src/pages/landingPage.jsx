@@ -3,6 +3,7 @@ import { Leaf, Camera, Upload, Brain, FileText, ShieldCheck, Globe } from 'lucid
 import { motion } from 'framer-motion';
 import krishi2Image from '../assets/krishi2.png';
 import { useLanguage } from '../contexts/LanguageContext';
+import ImageUpload from '../components/ImageUpload';
 
 // Animation Variants
 const fadeInUp = {
@@ -103,13 +104,7 @@ function Hero({ t }) {
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <a
-                href="#"
-                className="group inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-semibold rounded-xl text-white bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <Camera className="mr-2 h-5 w-5" />
-                {t.hero.upload}
-              </a>
+              <ImageUpload t={t} />
               <a
                 href="#how-it-works"
                 className="group inline-flex items-center justify-center px-8 py-4 border-2 border-emerald-600 text-base font-semibold rounded-xl text-emerald-600 bg-white/50 backdrop-blur-sm hover:bg-emerald-50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
