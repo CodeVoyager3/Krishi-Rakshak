@@ -9,7 +9,9 @@ export default function App() {
     <LanguageProvider>
       <div className="bg-white text-emerald-950 font-sans overflow-x-hidden">
         <Header />
-        <LandingPage />
+        <div className="pt-18">
+          <LandingPage />
+        </div>
         <Footer />
       </div>
     </LanguageProvider>

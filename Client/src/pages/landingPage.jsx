@@ -50,16 +50,17 @@ export default function LandingPage() {
 // Hero Section
 function Hero({ t }) {
   return (
-    <section className="relative bg-gradient-to-br from-emerald-50 via-green-50 to-emerald-100 overflow-x-hidden">
+    <section className="relative min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  overflow-x-hidden rounded-3xl my-4">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 -left-20 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 -right-20 w-96 h-96 bg-green-200/30 rounded-full blur-3xl"></div>
+        {/* <div className="absolute top-20 -left-20 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 -right-20 w-96 h-96 bg-green-200/30 rounded-full blur-3xl"></div> */}
+        <img src="/src/assets/krishi2.png" alt="Background" className='absolute inset-0 w-full h-full object-cover rounded-3xl opacity-50'/>
       </div>
       
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 relative z-10">
+      <div className="relative z-10 py-24 md:py-12 lg:py-18">
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          className="flex items-center justify-center"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
@@ -78,18 +79,18 @@ function Hero({ t }) {
             </motion.div>
             
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-emerald-900 leading-tight tracking-tight"
+              className="text-4xl md:text-5xl lg:text-7xl font-bold text-emerald-900 leading-tight tracking-tighter text-center"
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               {t.hero.title1}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-600 mt-2">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-600 mt-2 ">
                 {t.hero.title2}
               </span>
             </motion.h1>
             
             <motion.p 
-              className="mt-6 text-lg md:text-xl text-emerald-700/90 max-w-lg mx-auto md:mx-0 leading-relaxed"
+              className="mt-6 text-lg md:text-xl text-emerald-700/90 max-w-lg mx-auto md:mx-4 leading-relaxed font-semibold"
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
@@ -135,7 +136,7 @@ function Hero({ t }) {
           </div>
           
           {/* Image */}
-          <motion.div 
+          {/* <motion.div 
             className="relative"
             variants={fadeInUp}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -150,7 +151,7 @@ function Hero({ t }) {
             </div>
         
             
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
@@ -187,8 +188,8 @@ function Features({ t }) {
   ];
 
   return (
-    <section id="features" className="py-24 md:py-32 bg-gradient-to-b from-white to-emerald-50/30 overflow-x-hidden">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="features" className="py-24 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-emerald-50/30 overflow-x-hidden rounded-3xl my-4">
+      <div>
         <div className="text-center mb-16">
           <motion.span
             className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4"
@@ -278,8 +279,8 @@ function Features({ t }) {
 // About Section
 function About({ t }) {
   return (
-    <section id="about" className="py-24 md:py-32 bg-gradient-to-br from-emerald-50 via-white to-green-50 overflow-x-hidden">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-24 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-white to-green-50 overflow-x-hidden rounded-3xl my-4">
+      <div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
           {/* Image */}
           <motion.div 
@@ -361,8 +362,8 @@ function Stats({ t }) {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-emerald-50/50 to-white overflow-x-hidden">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-emerald-50/50 to-white overflow-x-hidden rounded-3xl my-4">
+      <div>
         <motion.div 
           className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
           variants={staggerContainer}
@@ -436,16 +437,16 @@ function HowItWorks({ t }) {
   ];
 
   return (
-    <section id="how-it-works" className="relative py-24 md:py-32 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white overflow-x-hidden">
+    <section id="how-it-works" className="relative py-24 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white overflow-x-hidden rounded-t-3xl mt-4 mb-0">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 rounded-3xl">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10">
         <div className="text-center mb-16">
           <motion.span
             className="inline-block px-4 py-2 bg-emerald-800/50 text-emerald-300 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm"
