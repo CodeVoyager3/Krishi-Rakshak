@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+env/
+
+# Byte-code and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*~
+
+# Editor and IDE files (e.g., VS Code settings)
+.vscode/
+.idea/
+
+# Operating System Files
+.DS_Store

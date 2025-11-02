@@ -6,12 +6,11 @@ from io import BytesIO
 import numpy as np
 import tensorflow as tf
 import os
-from google.cloud import storage
 from tensorflow.keras.models import load_model
 
 # --- GLOBAL MODEL LOADING ---
 # NOTE: Ensure this path is correct on your server environment.
-MODEL_PATH = "/home/ubuntu-nishchay/Downloads/fastApi-crash/plant_disease_prediction_model.h5" 
+MODEL_PATH = "/home/ubuntu-nishchay/Documents/Krishi-Rakshak/plant_disease_prediction_model.h5" 
 
 # Initialize model variable
 model = None
